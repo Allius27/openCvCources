@@ -62,9 +62,9 @@ Mat convertBGRtoHSV(Mat image){
                 h += 360;
             }
 
-            hsvImage.at<cv::Vec3b>(i, j)[0]= v * 255;
+            hsvImage.at<cv::Vec3b>(i, j)[2]= v * 255;
             hsvImage.at<cv::Vec3b>(i, j)[1] = s * 255;
-            hsvImage.at<cv::Vec3b>(i, j)[2] = h / 2;
+            hsvImage.at<cv::Vec3b>(i, j)[0] = h / 2;
         }
     }
 
