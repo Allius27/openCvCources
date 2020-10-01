@@ -187,7 +187,6 @@ int main(){
 
 
 	///
-    displayImage(colorMap);
 	
 	// Find all contours in the image
 	///
@@ -198,6 +197,7 @@ int main(){
     colorMap = displayConnectedComponents(imLabels);
 
 
+    displayImage(colorMap);
     displayImage(imLabels);
 
     ///
