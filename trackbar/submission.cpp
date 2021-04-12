@@ -40,7 +40,7 @@ void scaleImage(int, void* data){
 }
 
 int main() {
-    im = imread("../data/sample.png");
+    im = imread("../images/yoda.png");
 
     if (im.empty())
     {
